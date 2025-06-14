@@ -1,13 +1,21 @@
 {
   "name": "digital-garden-mono",
   "version": "1.0.0",
+  "private": true,
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.11.1"
+  "packageManager": "pnpm@10.11.1",
+  "dependencies": {
+    "eslint": "^9.29.0",
+    "prettier": "^3.5.3",
+    "turbo": "^2.5.4"
+  }
 }
