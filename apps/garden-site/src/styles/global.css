@@ -2,7 +2,6 @@
 
 body {
   background-color: rgb(243, 244, 246);
-  background-image:
-  linear-gradient(to right, rgb(243, 244, 246), rgb(209, 213, 219));
+  background-image: linear-gradient(to right, rgb(243, 244, 246), rgb(209, 213, 219));
   @apply min-h-screen;
 }
