@@ -27,7 +27,7 @@ export const tagType = defineType({
     }),
     defineField({
       name: 'icon',
-      type: 'image',
+      type: 'iconPicker',
     }),
   ],
   preview: {

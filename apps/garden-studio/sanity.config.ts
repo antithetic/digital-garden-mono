@@ -1,7 +1,7 @@
 import {visionTool} from '@sanity/vision'
 import {defineConfig} from 'sanity'
 import {structureTool} from 'sanity/structure'
-import {iconify} from 'sanity-plugin-iconify'
+import {iconPicker} from 'sanity-plugin-icon-picker'
 
 import {schemaTypes} from './src/schemaTypes'
 
@@ -12,7 +12,7 @@ export default defineConfig({
   projectId: 'zdfnyzir',
   dataset: 'production',
 
-  plugins: [structureTool(), visionTool(), iconify()],
+  plugins: [structureTool(), visionTool(), iconPicker()],
 
   schema: {
     types: schemaTypes,
