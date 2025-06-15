@@ -6,6 +6,10 @@ export const tagType = defineType({
   type: 'document',
   fields: [
     defineField({
+      name: 'icon',
+      type: 'iconPicker',
+    }),
+    defineField({
       name: 'name',
       title: 'Name',
       type: 'string',
@@ -24,10 +28,6 @@ export const tagType = defineType({
       title: 'Description',
       type: 'text',
       rows: 3,
-    }),
-    defineField({
-      name: 'icon',
-      type: 'iconPicker',
     }),
   ],
   preview: {
