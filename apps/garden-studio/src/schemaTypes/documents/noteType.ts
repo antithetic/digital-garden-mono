@@ -119,7 +119,7 @@ export const noteType = defineType({
     prepare({title, noteType, id}) {
       return {
         title,
-        subtitle: `${noteType} - ${id?.id}`,
+        subtitle: id?.id ? `${noteType} – ${id.id}` : noteType,
       }
     },
   },
