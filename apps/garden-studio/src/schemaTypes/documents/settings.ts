@@ -15,7 +15,7 @@ export const settingsType = defineType({
       title: 'Title',
       description: 'Website Title',
       type: 'string',
-      validation: (Rule: any) => Rule.required(),
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: 'description',
