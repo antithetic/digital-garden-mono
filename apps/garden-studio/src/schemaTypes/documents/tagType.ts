@@ -31,7 +31,7 @@ export const tagType = defineType({
     defineField({
       name: 'icon',
       title: 'Icon',
-      description: 'A u icon for this tag',
+      description: 'An icon for this tag',
       type: 'iconPicker',
     }),
     defineField({
