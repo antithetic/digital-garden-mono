@@ -20,7 +20,6 @@ export const datesType = defineType({
       title: 'Modified At',
       description: 'The date and time the note was last modified',
       type: 'datetime',
-      initialValue: () => new Date().toISOString(),
       validation: (rule) => rule.required(),
     }),
   ],
