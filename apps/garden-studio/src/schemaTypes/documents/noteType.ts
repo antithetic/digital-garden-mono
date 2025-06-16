@@ -19,9 +19,10 @@ export const noteType = defineType({
       description: 'The slug of the note',
       type: 'slug',
       options: {
-        source: (doc: any) => `${doc.id}-${doc.title}`,
+        source: (doc: any) => `${doc.id?.id}-${doc.title}`,
         slugify: (input: string) => input.toLowerCase().replace(/\s+/g, '-'),
       },
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: 'noteType',
@@ -62,21 +63,21 @@ export const noteType = defineType({
       title: 'Commentary',
       description: 'The commentary of this note in relation to the content',
       type: 'blockContent',
-      hidden: ({parent}: any) => parent?.noteType !== 'literature',
+      hidden: ({document}: any) => document?.noteType !== 'literature',
     }),
     defineField({
       name: 'source',
       title: 'Source',
       description: 'The source of the note',
       type: 'string',
-      hidden: ({parent}: any) => parent?.noteType !== 'literature',
+      hidden: ({document}: any) => document?.noteType !== 'literature',
     }),
     defineField({
       name: 'author',
       title: 'Author',
       description: 'The author of the note',
       type: 'string',
-      hidden: ({parent}: any) => parent?.noteType !== 'literature',
+      hidden: ({document}: any) => document?.noteType !== 'literature',
     }),
     defineField({
       name: 'tags',
@@ -88,6 +89,7 @@ export const noteType = defineType({
           to: [{type: 'tag'}],
         }),
       ],
+      validation: (Rule) => Rule.unique(),
     }),
     defineField({
       name: 'dates',

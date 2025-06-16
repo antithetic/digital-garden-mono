@@ -1,6 +1,6 @@
 import {authorType} from './documents/authorType'
 import {collectionType} from './documents/collectionType'
-import {linkType} from './documents/linkType'
+import {linkType} from './documents/linkItemType'
 import {noteType} from './documents/noteType'
 import {pageType} from './documents/pageType'
 import {settingsType} from './documents/settings'
