@@ -2,7 +2,7 @@ import {Link} from 'lucide-react'
 import {defineArrayMember, defineField, defineType} from 'sanity'
 
 export const linkType = defineType({
-  name: 'links',
+  name: 'linkItem',
   title: 'Links',
   type: 'document',
   icon: Link,
@@ -17,6 +17,11 @@ export const linkType = defineType({
       title: 'Link URL',
       description: 'Link to an absolute URL to a page on another website.',
       type: 'url',
+      validation: (Rule) =>
+        Rule.uri({
+          allowRelative: true,
+          scheme: ['http', 'https'],
+        }),
     }),
     defineField({
       name: 'description',
@@ -40,7 +45,7 @@ export const linkType = defineType({
       of: [
         defineArrayMember({
           type: 'reference',
-          to: [{type: 'note'}, {type: 'collection'}, {type: 'source'}, {type: 'links'}],
+          to: [{type: 'note'}, {type: 'collection'}, {type: 'source'}, {type: 'linkItem'}],
         }),
       ],
     }),

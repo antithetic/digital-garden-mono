@@ -28,7 +28,7 @@ export const sourceType = defineType({
       title: 'Links',
       description: 'Links related to the source',
       type: 'array',
-      of: [{type: 'link'}],
+      of: [{type: 'linkItem'}],
     }),
     defineField({
       name: 'author',

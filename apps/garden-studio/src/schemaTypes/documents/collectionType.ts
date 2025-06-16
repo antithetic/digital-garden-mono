@@ -24,6 +24,7 @@ export const collectionType = defineType({
       of: [
         defineArrayMember({
           type: 'reference',
+          weak: true,
           to: [{type: 'note'}],
         }),
       ],
