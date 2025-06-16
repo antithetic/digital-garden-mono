@@ -7,7 +7,7 @@ export const uniqueID = defineType({
     defineField({
       name: 'id',
       type: 'string',
-      title: 'Unique ID',
+      title: 'The unique ID for this document',
       readOnly: true,
       initialValue: () => {
         const now = new Date()
