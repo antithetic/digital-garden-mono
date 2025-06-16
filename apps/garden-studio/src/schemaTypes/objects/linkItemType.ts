@@ -1,6 +1,6 @@
 import {defineArrayMember, defineField, defineType} from 'sanity'
 
-export const linkItemType = defineType({
+export const linkItems = defineType({
   name: 'linkItem',
   title: 'Link Item',
   type: 'object',
