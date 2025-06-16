@@ -33,8 +33,12 @@ export const settingsType = defineType({
   preview: {
     select: {
       title: 'title',
-      subtitle: 'description',
+      descriptionRaw: 'description',
       media: 'logo',
+    },
+    prepare({title, descriptionRaw, media}) {
+      const firstText = descriptionRaw?.[0]?.children?.[0]?.text ?? '' // safest fallback
+      return {title, subtitle: firstText, media}
     },
   },
 })
