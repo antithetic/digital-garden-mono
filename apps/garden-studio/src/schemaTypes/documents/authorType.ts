@@ -24,9 +24,19 @@ export const authorType = defineType({
       validation: (Rule) => Rule.required(),
     }),
     defineField({
+      name: 'image',
+      title: 'Image',
+      description: 'A profile image for the author',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+    }),
+    defineField({
       name: 'bio',
       title: 'Bio',
-      type: 'blockContent',
+      type: 'text',
+      rows: 3,
     }),
     defineField({
       name: 'tags',
