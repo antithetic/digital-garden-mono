@@ -85,6 +85,7 @@ export const noteType = defineType({
       type: 'array',
       of: [{type: 'reference', to: [{type: 'collection'}]}],
       hidden: ({document}: any) => document?.noteType !== 'permanent',
+      validation: (Rule) => Rule.unique(),
     }),
     defineField({
       name: 'tags',
