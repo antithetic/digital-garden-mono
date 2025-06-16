@@ -1,4 +1,5 @@
 import {visionTool} from '@sanity/vision'
+import {Cannabis} from 'lucide-react'
 import {defineConfig} from 'sanity'
 import {structureTool} from 'sanity/structure'
 import {unsplashImageAsset} from 'sanity-plugin-asset-source-unsplash'
@@ -22,7 +23,7 @@ export default defineConfig({
 
   projectId: 'zdfnyzir',
   dataset: 'production',
-
+  icon: Cannabis,
   plugins: [
     singletonTools(),
     structureTool(),
