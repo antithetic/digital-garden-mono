@@ -5,9 +5,14 @@ import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 
 
+import showTailwindcssBreakpoint from 'astro-show-tailwindcss-breakpoint';
+
+
 // https://astro.build/config
 export default defineConfig({
   vite: {
     plugins: [tailwindcss()]
-  }
+  },
+
+  integrations: [showTailwindcssBreakpoint()]
 });
