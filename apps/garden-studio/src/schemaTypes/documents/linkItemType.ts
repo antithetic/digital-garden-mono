@@ -3,7 +3,7 @@ import {defineArrayMember, defineField, defineType} from 'sanity'
 
 export const linkType = defineType({
   name: 'linkItem',
-  title: 'Links',
+  title: 'Link',
   type: 'document',
   icon: Link,
   fields: [
