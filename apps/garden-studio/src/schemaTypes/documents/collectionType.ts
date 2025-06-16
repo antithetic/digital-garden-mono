@@ -32,7 +32,7 @@ export const collectionType = defineType({
     }),
     defineField({
       name: 'sources',
-      title: 'Source',
+      title: 'Sources',
       description: 'Sources for this collection',
       type: 'array',
       of: [

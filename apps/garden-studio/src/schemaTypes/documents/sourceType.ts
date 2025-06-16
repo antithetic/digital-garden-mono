@@ -1,5 +1,5 @@
 import {BookMarked} from 'lucide-react'
-import {defineField, defineType} from 'sanity'
+import {defineArrayMember, defineField, defineType} from 'sanity'
 
 export const sourceType = defineType({
   name: 'source',
@@ -11,6 +11,7 @@ export const sourceType = defineType({
       name: 'type',
       type: 'string',
       options: {list: ['book', 'article', 'podcast', 'video', 'web']},
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: 'title',
@@ -33,7 +34,8 @@ export const sourceType = defineType({
     defineField({
       name: 'author',
       title: 'Authors',
-      type: 'string',
+      type: 'array',
+      of: [defineArrayMember({type: 'reference', to: [{type: 'author'}]})],
     }),
     defineField({
       name: 'datePublished',
