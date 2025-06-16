@@ -97,7 +97,7 @@ export const noteType = defineType({
       type: 'dates',
     }),
     defineField({
-      name: 'id',
+      name: 'noteId',
       title: 'Note ID',
       type: 'uniqueID',
     }),

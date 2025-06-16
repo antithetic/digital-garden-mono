@@ -31,7 +31,7 @@ export const pageType = defineType({
       type: 'dates',
     }),
     defineField({
-      name: 'id',
+      name: 'pageId',
       title: 'Page ID',
       type: 'uniqueID',
     }),

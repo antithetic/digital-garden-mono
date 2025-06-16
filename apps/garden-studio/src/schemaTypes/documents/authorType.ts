@@ -52,7 +52,7 @@ export const authorType = defineType({
       type: 'dates',
     }),
     defineField({
-      name: 'id',
+      name: 'authorId',
       title: 'Author ID',
       type: 'uniqueID',
     }),

@@ -59,7 +59,7 @@ export const collectionType = defineType({
       type: 'dates',
     }),
     defineField({
-      name: 'id',
+      name: 'collectionId',
       title: 'Unique ID',
       type: 'uniqueID',
     }),

@@ -50,7 +50,7 @@ export const linkType = defineType({
       ],
     }),
     defineField({
-      name: 'id',
+      name: 'linkId',
       title: 'Link ID',
       type: 'uniqueID',
     }),
