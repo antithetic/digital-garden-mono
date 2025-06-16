@@ -3,6 +3,7 @@ import {defineConfig} from 'sanity'
 import {structureTool} from 'sanity/structure'
 import {iconPicker} from 'sanity-plugin-icon-picker'
 import {imageAssetPickerPlugin} from 'sanity-plugin-image-asset-picker'
+import {linkField} from 'sanity-plugin-link-field'
 import {media} from 'sanity-plugin-media'
 import {simplerColorInput} from 'sanity-plugin-simpler-color-input'
 
@@ -22,6 +23,10 @@ export default defineConfig({
     media(),
     imageAssetPickerPlugin(),
     simplerColorInput(),
+    linkField({
+      linkableSchemaTypes: ['note', 'collection', 'source', 'links', 'page'],
+      enableLinkParameters: false,
+    }),
   ],
 
   schema: {

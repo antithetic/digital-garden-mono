@@ -9,12 +9,13 @@ export const linkType = defineType({
   fields: [
     defineField({
       name: 'title',
-      title: 'Title',
+      title: 'Link Title',
       type: 'string',
     }),
     defineField({
       name: 'url',
-      title: 'URL',
+      title: 'Link URL',
+      description: 'Link to an absolute URL to a page on another website.',
       type: 'url',
     }),
     defineField({
