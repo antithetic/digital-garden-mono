@@ -1,5 +1,5 @@
 import {Tag} from 'lucide-react'
-import {defineField, defineType} from 'sanity'
+import {defineArrayMember, defineField, defineType} from 'sanity'
 
 export const tagType = defineType({
   name: 'tag',
@@ -26,6 +26,24 @@ export const tagType = defineType({
       title: 'Description',
       type: 'text',
       rows: 2,
+    }),
+    defineField({
+      name: 'color',
+      title: 'Tag Color',
+      description: 'A unique color for this tag',
+      type: 'simplerColor',
+    }),
+    defineField({
+      name: 'related',
+      title: 'Related Tags',
+      description: 'Tags that are related to this one',
+      type: 'array',
+      of: [
+        defineArrayMember({
+          type: 'reference',
+          to: [{type: 'tag'}],
+        }),
+      ],
     }),
   ],
   preview: {

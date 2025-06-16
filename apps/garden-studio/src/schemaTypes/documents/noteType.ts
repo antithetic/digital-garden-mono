@@ -96,21 +96,8 @@ export const noteType = defineType({
     }),
     defineField({
       name: 'id',
-      title: 'Unique ID',
-      description: 'The Unique ID of this note',
-      type: 'string',
-      readOnly: true,
-      initialValue: () => {
-        const now = new Date()
-        return (
-          now.getFullYear() +
-          String(now.getMonth() + 1).padStart(2, '0') +
-          String(now.getDate()).padStart(2, '0') +
-          String(now.getHours()).padStart(2, '0') +
-          String(now.getMinutes()).padStart(2, '0')
-        )
-      },
-      validation: (Rule) => Rule.required(),
+      title: 'Note ID',
+      type: 'uniqueID',
     }),
   ],
 })

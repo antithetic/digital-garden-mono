@@ -46,5 +46,10 @@ export const sourceType = defineType({
       type: 'array',
       of: [{type: 'reference', to: [{type: 'tag'}]}],
     }),
+    defineField({
+      name: 'id',
+      title: 'Unique ID',
+      type: 'uniqueID',
+    }),
   ],
 })
