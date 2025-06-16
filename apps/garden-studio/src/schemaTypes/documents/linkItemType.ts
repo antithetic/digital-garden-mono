@@ -11,6 +11,7 @@ export const linkType = defineType({
       name: 'title',
       title: 'Link Title',
       type: 'string',
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: 'url',
@@ -19,7 +20,6 @@ export const linkType = defineType({
       type: 'url',
       validation: (Rule) =>
         Rule.uri({
-          allowRelative: true,
           scheme: ['http', 'https'],
         }),
     }),
