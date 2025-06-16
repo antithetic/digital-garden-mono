@@ -24,6 +24,7 @@ export default defineConfig({
   dataset: 'production',
 
   plugins: [
+    singletonTools(),
     structureTool(),
     visionTool(),
     iconPicker(),
@@ -34,7 +35,6 @@ export default defineConfig({
       linkableSchemaTypes: ['note', 'collection', 'source', 'linkItem', 'page'],
       enableLinkParameters: false,
     }),
-    singletonTools(),
     unsplashImageAsset(),
   ],
 
