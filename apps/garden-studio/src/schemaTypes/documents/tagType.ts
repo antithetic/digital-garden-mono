@@ -64,7 +64,7 @@ export const tagType = defineType({
       return {
         title: name,
         subtitle: description,
-        media: preview(icon),
+        media: icon ? preview(icon) : Tag, // Tag imported at top
       }
     },
   },
