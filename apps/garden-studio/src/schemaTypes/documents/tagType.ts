@@ -1,14 +1,12 @@
+import {Tag} from 'lucide-react'
 import {defineField, defineType} from 'sanity'
 
 export const tagType = defineType({
   name: 'tag',
   title: 'Tag',
   type: 'document',
+  icon: Tag,
   fields: [
-    defineField({
-      name: 'icon',
-      type: 'iconPicker',
-    }),
     defineField({
       name: 'name',
       title: 'Name',
@@ -27,7 +25,7 @@ export const tagType = defineType({
       name: 'description',
       title: 'Description',
       type: 'text',
-      rows: 3,
+      rows: 2,
     }),
   ],
   preview: {
