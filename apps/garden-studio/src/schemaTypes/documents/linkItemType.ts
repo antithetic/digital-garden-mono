@@ -1,7 +1,7 @@
 import {Link} from 'lucide-react'
 import {defineArrayMember, defineField, defineType} from 'sanity'
 
-export const linkType = defineType({
+export const linkItemType = defineType({
   name: 'linkItem',
   title: 'Link',
   type: 'document',
@@ -45,7 +45,7 @@ export const linkType = defineType({
       of: [
         defineArrayMember({
           type: 'reference',
-          to: [{type: 'note'}, {type: 'collection'}, {type: 'source'}, {type: 'linkItem'}],
+          to: [{type: 'note'}, {type: 'collection'}, {type: 'source'}],
         }),
       ],
     }),

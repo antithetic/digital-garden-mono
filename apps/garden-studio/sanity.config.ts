@@ -24,7 +24,7 @@ export default defineConfig({
     imageAssetPickerPlugin(),
     simplerColorInput(),
     linkField({
-      linkableSchemaTypes: ['note', 'collection', 'source', 'links', 'page'],
+      linkableSchemaTypes: ['note', 'collection', 'source', 'linkItem', 'page'],
       enableLinkParameters: false,
     }),
   ],
