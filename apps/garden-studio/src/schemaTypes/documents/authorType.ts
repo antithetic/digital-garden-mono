@@ -31,6 +31,15 @@ export const authorType = defineType({
       options: {
         hotspot: true,
       },
+      fields: [
+        defineField({
+          name: 'alt',
+          title: 'Alt Text',
+          description: 'Short description for accessibility & SEO',
+          type: 'string',
+          validation: (Rule) => Rule.required().max(120),
+        }),
+      ],
     }),
     defineField({
       name: 'bio',
