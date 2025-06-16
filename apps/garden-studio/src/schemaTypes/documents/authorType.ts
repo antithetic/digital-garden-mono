@@ -11,6 +11,7 @@ export const authorType = defineType({
       name: 'name',
       title: 'Name',
       type: 'string',
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: 'slug',
@@ -19,6 +20,8 @@ export const authorType = defineType({
       options: {
         source: 'name',
       },
+      hidden: ({document}) => !document?.name,
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: 'bio',
