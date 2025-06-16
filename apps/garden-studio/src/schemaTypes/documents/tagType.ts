@@ -42,6 +42,7 @@ export const tagType = defineType({
         defineArrayMember({
           type: 'reference',
           to: [{type: 'tag'}],
+          weak: true,
         }),
       ],
     }),
