@@ -6,6 +6,9 @@ export const settingsType = defineType({
   title: 'Settings',
   type: 'document',
   icon: Settings,
+  options: {
+    singleton: true,
+  },
   fields: [
     defineField({
       name: 'title',
@@ -27,4 +30,15 @@ export const settingsType = defineType({
       type: 'image',
     }),
   ],
+  preview: {
+    select: {
+      title: 'title',
+      descriptionRaw: 'description',
+      media: 'logo',
+    },
+    prepare({title, descriptionRaw, media}) {
+      const firstText = descriptionRaw?.[0]?.children?.[0]?.text ?? '' // safest fallback
+      return {title, subtitle: firstText, media}
+    },
+  },
 })

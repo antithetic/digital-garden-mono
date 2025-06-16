@@ -24,9 +24,28 @@ export const authorType = defineType({
       validation: (Rule) => Rule.required(),
     }),
     defineField({
+      name: 'image',
+      title: 'Image',
+      description: 'A profile image for the author',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+      fields: [
+        defineField({
+          name: 'alt',
+          title: 'Alt Text',
+          description: 'Short description for accessibility & SEO',
+          type: 'string',
+          validation: (Rule) => Rule.required().max(120),
+        }),
+      ],
+    }),
+    defineField({
       name: 'bio',
       title: 'Bio',
-      type: 'blockContent',
+      type: 'text',
+      rows: 3,
     }),
     defineField({
       name: 'tags',
@@ -57,4 +76,11 @@ export const authorType = defineType({
       type: 'uniqueID',
     }),
   ],
+  preview: {
+    select: {
+      title: 'name',
+      subtitle: 'bio',
+      media: 'image',
+    },
+  },
 })

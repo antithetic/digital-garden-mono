@@ -63,6 +63,9 @@ importers:
       sanity:
         specifier: ^3.92.0
         version: 3.92.0(@emotion/is-prop-valid@1.2.2)(@types/node@24.0.1)(@types/react@19.1.8)(immer@10.1.1)(jiti@2.4.2)(lightningcss@1.30.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(styled-components@6.1.19(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.8.3)(yaml@2.8.0)
+      sanity-plugin-asset-source-unsplash:
+        specifier: ^3.0.3
+        version: 3.0.3(@emotion/is-prop-valid@1.2.2)(react-dom@19.1.0(react@19.1.0))(react-is@18.3.1)(react@19.1.0)(sanity@3.92.0(@emotion/is-prop-valid@1.2.2)(@types/node@24.0.1)(@types/react@19.1.8)(immer@10.1.1)(jiti@2.4.2)(lightningcss@1.30.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(styled-components@6.1.19(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.8.3)(yaml@2.8.0))(styled-components@6.1.19(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
       sanity-plugin-icon-picker:
         specifier: ^4.0.0
         version: 4.0.0(@emotion/is-prop-valid@1.2.2)(react-dom@19.1.0(react@19.1.0))(react-is@18.3.1)(react@19.1.0)(sanity@3.92.0(@emotion/is-prop-valid@1.2.2)(@types/node@24.0.1)(@types/react@19.1.8)(immer@10.1.1)(jiti@2.4.2)(lightningcss@1.30.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(styled-components@6.1.19(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.8.3)(yaml@2.8.0))
@@ -78,6 +81,9 @@ importers:
       sanity-plugin-simpler-color-input:
         specifier: ^3.0.1
         version: 3.0.1(@babel/runtime@7.27.6)(@emotion/is-prop-valid@1.2.2)(react-dom@19.1.0(react@19.1.0))(react-is@18.3.1)(react@19.1.0)(sanity@3.92.0(@emotion/is-prop-valid@1.2.2)(@types/node@24.0.1)(@types/react@19.1.8)(immer@10.1.1)(jiti@2.4.2)(lightningcss@1.30.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(styled-components@6.1.19(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.8.3)(yaml@2.8.0))(styled-components@6.1.19(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
+      sanity-plugin-singleton-tools:
+        specifier: ^1.1.0
+        version: 1.1.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sanity@3.92.0(@emotion/is-prop-valid@1.2.2)(@types/node@24.0.1)(@types/react@19.1.8)(immer@10.1.1)(jiti@2.4.2)(lightningcss@1.30.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(styled-components@6.1.19(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.8.3)(yaml@2.8.0))
       styled-components:
         specifier: ^6.1.18
         version: 6.1.19(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -5352,11 +5358,22 @@ packages:
     peerDependencies:
       react: '*'
 
+  react-infinite-scroll-component@6.1.0:
+    resolution: {integrity: sha512-SQu5nCqy8DxQWpnUVLx7V7b7LcA37aM7tvoWjTLZp1dk6EJibM5/4EJKzOnl07/BsM1Y40sKLuqjCwwH/xV0TQ==}
+    peerDependencies:
+      react: '>=16.0.0'
+
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
 
   react-is@18.3.1:
     resolution: {integrity: sha512-/LLMVyas0ljjAtoYiPqYiL8VWXzUUdThrmU5+n20DZv+a+ClRoevUzw5JxU+Ieh5/c87ytoTBV9G1FiKfNJdmg==}
+
+  react-photo-album@2.4.1:
+    resolution: {integrity: sha512-dzqP5QbYAugA0uZTl3qsVldckzDXYDkDOvA8CpACl51hSEfhJmCfwhbnI4WBHnETQHv48nnNQ1jhrulst8njLA==}
+    engines: {node: '>=12'}
+    peerDependencies:
+      react: '>=16.8.0'
 
   react-redux@9.2.0:
     resolution: {integrity: sha512-ROY9fvHhwOD9ySfrF0wmvu//bKCQ6AeZZq1nJNtbDC+kk5DuSuNX/n6YWYF/SYy7bSba4D4FSz8DJeKY/S/r+g==}
@@ -5667,6 +5684,14 @@ packages:
   safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
+  sanity-plugin-asset-source-unsplash@3.0.3:
+    resolution: {integrity: sha512-3d3Yx/j0Ufd3zfkqfQD3vsX2Q2fh/InyUKdHcGV32u/tHLYzz6UNE6GULzewDa3qnIPtIYRxbczfsKr9VTilvw==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      react: ^18 || ^19
+      sanity: ^3
+      styled-components: ^6.1
+
   sanity-plugin-icon-picker@4.0.0:
     resolution: {integrity: sha512-+iLTymIYqa6HqgjQvNgcT8QDmakohAm0M/dLg6azmGw3w1xnugY2+Pqqv53Rq+ujriGhy665jawvAbvJrpM9dA==}
     engines: {node: '>=14'}
@@ -5708,6 +5733,13 @@ packages:
       react: ^18.3 || ^19
       sanity: ^3.23.0
       styled-components: ^6.1
+
+  sanity-plugin-singleton-tools@1.1.0:
+    resolution: {integrity: sha512-Z/AXCVBJ/Gc8RgwKX2GzfaKMSWJ7d9ycWfNSFTduhiBMFyJdjwLIK2Zh6eyl3Ctl7y6LiIEwJ/4VD9rx3F2WAw==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      react: ^18
+      sanity: ^3
 
   sanity@3.92.0:
     resolution: {integrity: sha512-1QzHTKGovynUw9S3a5rITr6RDuPllX0/CgXKQnKRdk2u67Rr0pqoTcVrnbnQjopjHzImXWgZCh9wvilu9coLpQ==}
@@ -6048,6 +6080,10 @@ packages:
 
   text-decoder@1.2.3:
     resolution: {integrity: sha512-3/o9z3X0X0fTupwsYvR03pJ/DjWuqqrfwBgTQzdWDiQSm9KitAyz/9WqsT2JQW7KV2m+bC2ol/zqpW37NHxLaA==}
+
+  throttle-debounce@2.3.0:
+    resolution: {integrity: sha512-H7oLPV0P7+jgvrk+6mwwwBDmxTaxnu9HMXmloNLXwnNO0ZxZ31Orah2n8lU1eMPvsaowP2CX+USCgyovXfdOFQ==}
+    engines: {node: '>=8'}
 
   through2@2.0.5:
     resolution: {integrity: sha512-/mrRod8xqpA+IHSLyGCQ2s8SPHiCDEeQJSep1jqLYeEUClOFG2Qsh+4FU6G9VeqpZnGW/Su8LQGc4YKni5rYSQ==}
@@ -12996,9 +13032,18 @@ snapshots:
     dependencies:
       react: 19.1.0
 
+  react-infinite-scroll-component@6.1.0(react@19.1.0):
+    dependencies:
+      react: 19.1.0
+      throttle-debounce: 2.3.0
+
   react-is@16.13.1: {}
 
   react-is@18.3.1: {}
+
+  react-photo-album@2.4.1(react@19.1.0):
+    dependencies:
+      react: 19.1.0
 
   react-redux@9.2.0(@types/react@19.1.8)(react@19.1.0)(redux@5.0.1):
     dependencies:
@@ -13417,6 +13462,22 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
+  sanity-plugin-asset-source-unsplash@3.0.3(@emotion/is-prop-valid@1.2.2)(react-dom@19.1.0(react@19.1.0))(react-is@18.3.1)(react@19.1.0)(sanity@3.92.0(@emotion/is-prop-valid@1.2.2)(@types/node@24.0.1)(@types/react@19.1.8)(immer@10.1.1)(jiti@2.4.2)(lightningcss@1.30.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(styled-components@6.1.19(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.8.3)(yaml@2.8.0))(styled-components@6.1.19(react-dom@19.1.0(react@19.1.0))(react@19.1.0)):
+    dependencies:
+      '@sanity/icons': 3.7.0(react@19.1.0)
+      '@sanity/incompatible-plugin': 1.0.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@sanity/ui': 2.15.18(@emotion/is-prop-valid@1.2.2)(react-dom@19.1.0(react@19.1.0))(react-is@18.3.1)(react@19.1.0)(styled-components@6.1.19(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
+      react: 19.1.0
+      react-infinite-scroll-component: 6.1.0(react@19.1.0)
+      react-photo-album: 2.4.1(react@19.1.0)
+      rxjs: 7.8.2
+      sanity: 3.92.0(@emotion/is-prop-valid@1.2.2)(@types/node@24.0.1)(@types/react@19.1.8)(immer@10.1.1)(jiti@2.4.2)(lightningcss@1.30.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(styled-components@6.1.19(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.8.3)(yaml@2.8.0)
+      styled-components: 6.1.19(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+    transitivePeerDependencies:
+      - '@emotion/is-prop-valid'
+      - react-dom
+      - react-is
+
   sanity-plugin-icon-picker@4.0.0(@emotion/is-prop-valid@1.2.2)(react-dom@19.1.0(react@19.1.0))(react-is@18.3.1)(react@19.1.0)(sanity@3.92.0(@emotion/is-prop-valid@1.2.2)(@types/node@24.0.1)(@types/react@19.1.8)(immer@10.1.1)(jiti@2.4.2)(lightningcss@1.30.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(styled-components@6.1.19(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.8.3)(yaml@2.8.0)):
     dependencies:
       '@sanity/incompatible-plugin': 1.0.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -13514,6 +13575,15 @@ snapshots:
       - '@emotion/is-prop-valid'
       - react-dom
       - react-is
+
+  sanity-plugin-singleton-tools@1.1.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sanity@3.92.0(@emotion/is-prop-valid@1.2.2)(@types/node@24.0.1)(@types/react@19.1.8)(immer@10.1.1)(jiti@2.4.2)(lightningcss@1.30.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(styled-components@6.1.19(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.8.3)(yaml@2.8.0)):
+    dependencies:
+      '@sanity/icons': 2.11.8(react@19.1.0)
+      '@sanity/incompatible-plugin': 1.0.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      react: 19.1.0
+      sanity: 3.92.0(@emotion/is-prop-valid@1.2.2)(@types/node@24.0.1)(@types/react@19.1.8)(immer@10.1.1)(jiti@2.4.2)(lightningcss@1.30.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(styled-components@6.1.19(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.8.3)(yaml@2.8.0)
+    transitivePeerDependencies:
+      - react-dom
 
   sanity@3.92.0(@emotion/is-prop-valid@1.2.2)(@types/node@24.0.1)(@types/react@19.1.8)(immer@10.1.1)(jiti@2.4.2)(lightningcss@1.30.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(styled-components@6.1.19(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.8.3)(yaml@2.8.0):
     dependencies:
@@ -14106,6 +14176,8 @@ snapshots:
   text-decoder@1.2.3:
     dependencies:
       b4a: 1.6.7
+
+  throttle-debounce@2.3.0: {}
 
   through2@2.0.5:
     dependencies:
