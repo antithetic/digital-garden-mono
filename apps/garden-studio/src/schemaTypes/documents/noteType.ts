@@ -80,6 +80,13 @@ export const noteType = defineType({
       hidden: ({document}: any) => document?.noteType !== 'literature',
     }),
     defineField({
+      name: 'collections',
+      title: 'Collections',
+      type: 'array',
+      of: [{type: 'reference', to: [{type: 'collection'}]}],
+      hidden: ({document}: any) => document?.noteType !== 'permanent',
+    }),
+    defineField({
       name: 'tags',
       title: 'Tags',
       type: 'array',
@@ -97,9 +104,22 @@ export const noteType = defineType({
       type: 'dates',
     }),
     defineField({
-      name: 'noteId',
+      name: 'id',
       title: 'Note ID',
       type: 'uniqueID',
     }),
   ],
+  preview: {
+    select: {
+      title: 'title',
+      noteType: 'noteType',
+      id: 'id',
+    },
+    prepare({title, noteType, id}) {
+      return {
+        title,
+        subtitle: `${noteType} - ${id?.id}`,
+      }
+    },
+  },
 })

@@ -55,4 +55,16 @@ export const linkItemType = defineType({
       type: 'uniqueID',
     }),
   ],
+  preview: {
+    select: {
+      title: 'title',
+      subtitle: 'url',
+    },
+    prepare({title, subtitle}) {
+      return {
+        title,
+        subtitle,
+      }
+    },
+  },
 })

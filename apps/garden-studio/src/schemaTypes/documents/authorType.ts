@@ -57,4 +57,11 @@ export const authorType = defineType({
       type: 'uniqueID',
     }),
   ],
+  preview: {
+    select: {
+      title: 'name',
+      subtitle: 'bio',
+      media: 'image',
+    },
+  },
 })

@@ -54,4 +54,23 @@ export const sourceType = defineType({
       type: 'uniqueID',
     }),
   ],
+  preview: {
+    select: {
+      title: 'title',
+      type: 'type',
+      author0: 'author.0.name',
+      author1: 'author.1.name',
+      author2: 'author.2.name',
+      datePublished: 'datePublished',
+    },
+    prepare({title, type, author0, author1, author2, datePublished}) {
+      const authors = [author0, author1, author2].filter(Boolean)
+      const authorNames = authors.length > 0 ? authors.join(', ') : 'Unknown'
+      const formattedDate = datePublished ? new Date(datePublished).toLocaleDateString() : 'No date'
+      return {
+        title,
+        subtitle: `${type} • ${authorNames} • ${formattedDate}`,
+      }
+    },
+  },
 })
