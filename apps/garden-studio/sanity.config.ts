@@ -1,6 +1,7 @@
 import {visionTool} from '@sanity/vision'
 import {defineConfig} from 'sanity'
 import {structureTool} from 'sanity/structure'
+import {unsplashImageAsset} from 'sanity-plugin-asset-source-unsplash'
 import {iconPicker} from 'sanity-plugin-icon-picker'
 import {imageAssetPickerPlugin} from 'sanity-plugin-image-asset-picker'
 import {linkField} from 'sanity-plugin-link-field'
@@ -34,6 +35,7 @@ export default defineConfig({
       enableLinkParameters: false,
     }),
     singletonTools(),
+    unsplashImageAsset(),
   ],
 
   schema: {

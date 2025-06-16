@@ -30,4 +30,11 @@ export const settingsType = defineType({
       type: 'image',
     }),
   ],
+  preview: {
+    select: {
+      title: 'title',
+      subtitle: 'description',
+      media: 'logo',
+    },
+  },
 })

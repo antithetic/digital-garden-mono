@@ -21,6 +21,7 @@
     "react": "^19.1",
     "react-dom": "^19.1",
     "sanity": "^3.92.0",
+    "sanity-plugin-asset-source-unsplash": "^3.0.3",
     "sanity-plugin-icon-picker": "^4.0.0",
     "sanity-plugin-image-asset-picker": "^1.0.0",
     "sanity-plugin-link-field": "^1.4.0",
