@@ -60,11 +60,5 @@ export const linkItemType = defineType({
       title: 'title',
       subtitle: 'url',
     },
-    prepare({title, subtitle}) {
-      return {
-        title,
-        subtitle,
-      }
-    },
   },
 })
