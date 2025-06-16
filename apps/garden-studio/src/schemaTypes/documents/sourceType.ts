@@ -65,7 +65,8 @@ export const sourceType = defineType({
     },
     prepare({title, type, author0, author1, author2, datePublished}) {
       const authors = [author0, author1, author2].filter(Boolean)
-      const authorNames = authors.length > 0 ? authors.join(', ') : 'Unknown'
+      const extra = authors.length === 3 ? '…' : ''
+      const authorNames = authors.join(', ') + extra
       const formattedDate = datePublished ? new Date(datePublished).toLocaleDateString() : 'No date'
       return {
         title,
