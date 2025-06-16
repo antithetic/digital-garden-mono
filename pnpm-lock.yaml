@@ -78,6 +78,9 @@ importers:
       sanity-plugin-simpler-color-input:
         specifier: ^3.0.1
         version: 3.0.1(@babel/runtime@7.27.6)(@emotion/is-prop-valid@1.2.2)(react-dom@19.1.0(react@19.1.0))(react-is@18.3.1)(react@19.1.0)(sanity@3.92.0(@emotion/is-prop-valid@1.2.2)(@types/node@24.0.1)(@types/react@19.1.8)(immer@10.1.1)(jiti@2.4.2)(lightningcss@1.30.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(styled-components@6.1.19(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.8.3)(yaml@2.8.0))(styled-components@6.1.19(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
+      sanity-plugin-singleton-tools:
+        specifier: ^1.1.0
+        version: 1.1.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sanity@3.92.0(@emotion/is-prop-valid@1.2.2)(@types/node@24.0.1)(@types/react@19.1.8)(immer@10.1.1)(jiti@2.4.2)(lightningcss@1.30.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(styled-components@6.1.19(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.8.3)(yaml@2.8.0))
       styled-components:
         specifier: ^6.1.18
         version: 6.1.19(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -5708,6 +5711,13 @@ packages:
       react: ^18.3 || ^19
       sanity: ^3.23.0
       styled-components: ^6.1
+
+  sanity-plugin-singleton-tools@1.1.0:
+    resolution: {integrity: sha512-Z/AXCVBJ/Gc8RgwKX2GzfaKMSWJ7d9ycWfNSFTduhiBMFyJdjwLIK2Zh6eyl3Ctl7y6LiIEwJ/4VD9rx3F2WAw==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      react: ^18
+      sanity: ^3
 
   sanity@3.92.0:
     resolution: {integrity: sha512-1QzHTKGovynUw9S3a5rITr6RDuPllX0/CgXKQnKRdk2u67Rr0pqoTcVrnbnQjopjHzImXWgZCh9wvilu9coLpQ==}
@@ -13514,6 +13524,15 @@ snapshots:
       - '@emotion/is-prop-valid'
       - react-dom
       - react-is
+
+  sanity-plugin-singleton-tools@1.1.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sanity@3.92.0(@emotion/is-prop-valid@1.2.2)(@types/node@24.0.1)(@types/react@19.1.8)(immer@10.1.1)(jiti@2.4.2)(lightningcss@1.30.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(styled-components@6.1.19(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.8.3)(yaml@2.8.0)):
+    dependencies:
+      '@sanity/icons': 2.11.8(react@19.1.0)
+      '@sanity/incompatible-plugin': 1.0.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      react: 19.1.0
+      sanity: 3.92.0(@emotion/is-prop-valid@1.2.2)(@types/node@24.0.1)(@types/react@19.1.8)(immer@10.1.1)(jiti@2.4.2)(lightningcss@1.30.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(styled-components@6.1.19(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.8.3)(yaml@2.8.0)
+    transitivePeerDependencies:
+      - react-dom
 
   sanity@3.92.0(@emotion/is-prop-valid@1.2.2)(@types/node@24.0.1)(@types/react@19.1.8)(immer@10.1.1)(jiti@2.4.2)(lightningcss@1.30.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(styled-components@6.1.19(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.8.3)(yaml@2.8.0):
     dependencies:

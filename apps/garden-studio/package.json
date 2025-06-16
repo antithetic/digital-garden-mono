@@ -26,6 +26,7 @@
     "sanity-plugin-link-field": "^1.4.0",
     "sanity-plugin-media": "^3.0.3",
     "sanity-plugin-simpler-color-input": "^3.0.1",
+    "sanity-plugin-singleton-tools": "^1.1.0",
     "styled-components": "^6.1.18"
   },
   "devDependencies": {

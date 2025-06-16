@@ -6,13 +6,16 @@ export const settingsType = defineType({
   title: 'Settings',
   type: 'document',
   icon: Settings,
+  options: {
+    singleton: true,
+  },
   fields: [
     defineField({
       name: 'title',
       title: 'Title',
       description: 'Website Title',
       type: 'string',
-      validation: (Rule) => Rule.required(),
+      validation: (Rule: any) => Rule.required(),
     }),
     defineField({
       name: 'description',
